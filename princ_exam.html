@@ -18,7 +18,7 @@
 
         .pdf-list {
             max-width: 700px;
-            margin: 0 auto;
+            margin: 0 auto 40px;
             padding: 0;
             list-style: none;
         }
@@ -34,10 +34,33 @@
         .pdf-item a {
             font-size: 1.1rem;
             text-decoration: none;
+            color: #000;
         }
 
         .pdf-item a:hover {
             text-decoration: underline;
+        }
+
+        /* IMAGE GALLERY */
+        .gallery {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
         }
     </style>
 </head>
@@ -80,6 +103,24 @@
         </li>
 
     </ul>
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery">
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/JakubSajdik/mff-survival-guide/main/princ_photos/1e940b92-5f23-4ef3-a81b-d4bc295f70c4.jpg" 
+                 alt="Principles of Computers Exam Page 1">
+        </div>
+
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/JakubSajdik/mff-survival-guide/main/princ_photos/807af64c-add5-41ba-af8c-d51b94972b7c.jpg" 
+                 alt="Principles of Computers Exam Page 2">
+        </div>
+
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/JakubSajdik/mff-survival-guide/main/princ_photos/bb1c4e30-9b8f-47b8-a97d-433dff1b4e92.jpg" 
+                 alt="Principles of Computers Exam Page 3">
+        </div>
+    </div>
 
 </body>
 </html>
